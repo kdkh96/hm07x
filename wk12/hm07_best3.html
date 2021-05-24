@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm07_best3</title>
+    <style></style>
+
+    <script>
+      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value; 
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>hm07 best movie 3</h3>
+    <hr />
+    hm07의 좋아하는 영화 3
+    <select id="site">
+        <option value="">
+            hm07의 좋아하는 영화 3
+          </option>
+      <option value="https://youtu.be/m1A8CPG9HKM" >봉오동전투 </option>
+      <option value="https://youtu.be/3WUw9thZR4k">겨울왕국2 </option>
+      <option value="https://youtu.be/LfVjazBVlOw">피끓는 청춘 </option>
+    </select>
+
+    <p>
+      <button onclick="load()">movie예고편으로 이동</button>
+    </p>
+  <h4>
+      봉오동전투는 우리나라의 역사를 담은 영화이다. 우리나라의 독립을 위해 희생하신 분들을 다시한번 상기시키게한다.<br>
+      겨울왕국2는 애니메이션 뮤지컬 영화이다. 좋은 OST들이 많이 나온다.<br>
+      피끓는 청춘은 코미디 영화이다. 정말 재미있어서 안 본 사람들은 꼭 봤으면 좋겠다.<br>
+  </h4>
+
+  </body>
+</html>
