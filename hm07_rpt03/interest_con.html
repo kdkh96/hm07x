@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<script>
+    
+         function over(obj) {
+            obj.src="images/영화1.png";
+            }
+            function out(obj) {
+            obj.src="images/스물1.png";
+            }
+            
+
+        function query() {
+        var ret = confirm("영화 예고편을 보러 가시겠습니까 ? ");
+        return ret;
+        // confirm()의 리턴 값은 true 또는 false
+      }
+
+      function noAction(e) {
+        e.preventDefault();
+        // 이벤트의 디폴트 행동 강제취소
+      }
+     
+     
+    
+      function query4() {
+        var ret = confirm("영화 예고편을 보러 가시겠습니까 ? ");
+        return ret;
+        // confirm()의 리턴 값은 true 또는 false
+      }
+
+      function noAction(e) {
+        e.preventDefault();
+        // 이벤트의 디폴트 행동 강제취소
+      }
+
+
+
+</script>
+</body>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body background="images/Stellar.jpg">
+    
+    <center> 
+        <img src = "images/스물1.PNG" alt = "이미지"
+        onmouseover="over(this)"
+        onmouseout="out(this)"width=60% height=60%> 
+   
+    <center><p><b> <like><mark>좋아하는 영화 : 스물  </like></mark><b></p></center>
+   
+        <form>
+           
+            주인공 : <input type="text" list="actor1"><br>
+                <datalist id="actor1">
+                    <option value="김우빈">
+                    <option value="강하늘">
+                 
+                </datalist> 
+            나머지 배우 : <input type="text"list="rest1"><br>
+                <datalist id="rest1">
+                    <option value="박소민">
+                    <option value="이유비">
+                    <option value="민효린">
+                    </option>
+                </datalist>
+       
+        </form>
+    <center>
+        <a href="https://movie.daum.net/moviedb/contents?movieId=106993&videoId=54725"><img src="images/영화2.PNG"/></a>
+
+  
+
+    <center><p><b> <like><mark>좋아하는 영화 : 청년경찰 </like></mark><b></p></center>
+        <form>
+       
+            주인공 : <input type="text" list="actor2"><br>
+                <datalist id="actor2">
+                    <option value="박서준">
+                    <option value="강하늘">
+    
+                </datalist> 
+            나머지 배우 : <input type="text"list="rest2"><br>
+                <datalist id="rest2">
+                    <option value="성동일">
+                    <option value="박하선">
+                    <option value="고준">
+                    </option>
+                </datalist>
+        </form>
+
+
+
+
+
+    <center>  <a href="https://movie.daum.net/moviedb/contents?movieId=69884&videoId=41412"><img src="images/영화3.PNG"/></a> 
+    <center><p><b><like><mark>좋아하는 영화 : 은밀하게 위대하게</like></mark><b></p></center>
+        <form>
+       
+            주인공 : <input type="text" list="actor3"><br>
+                <datalist id="actor3">
+                    <option value="김수현">
+                    <option value="박기웅">
+    
+                </datalist> 
+            나머지 배우 : <input type="text"list="rest3"><br>
+                <datalist id="rest3">
+                    <option value="이현우">
+                    <option value="손현주">
+                    <option value="고창석">
+                    </option>
+                </datalist>
+        </form>
+    <br>
+
+
+    <script>
+        var div=document.getElementById("div");
+        var timerID=setInterval("doRotate()",200);
+
+        div.onclick=function(e){
+            clearInterval(timerID);
+        }
+
+        function doRotate(){
+            var str=div.innerHTML;
+            var firstChar = str.substr(0,1);
+            var remains=str.substr(1,str.length-1);
+            str=remains+firstChar;
+            div.innerHTML=str;
+        }
+    </script>
+<hr />
+<a href="https://movie.daum.net/moviedb/contents?movieId=106993&videoId=54725" onclick="return query2()">
+  청년경찰 예고편</a>
+<hr />
+<hr />
+<a href="https://movie.daum.net/moviedb/contents?movieId=69884&videoId=41412" onclick="return query3()">
+  은밀하게 위대하게 예고편</a>
+<hr />
+<hr />
+   
+</body>
+</html>

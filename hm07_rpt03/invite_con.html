@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link rel="stylesheet" href="layout.css">
+    <body background="images/Stellar.jpg"></body>
+
+<title>HM07 동호회 가입하시러 오신걸 진심으로 환영합니다.</title>
+    <script>
+    function checkFilled(obj) {
+    if(obj.value == "") {
+    alert("enter name!");
+    obj.focus(); // obj에 다시 포커스
+    }
+    }
+    </script>
+    </head>
+    <body onload="document.getElementById('name').focus();">
+    <hr>
+    <p><like><mark>동호회 가입을 위한 필수절차</like></mark></p>
+    <fieldset>
+        <legend>회원정보 입력</legend>
+    <form>
+    이름(필수입력)<input type="text" id="name" 
+    onblur="checkFilled(this)"><br>
+    학번<input type="text"> <br>
+    전화번호<input type="text">
+    <button onclick=button>
+        <a href ="javascript:alert('축하합니다. 가입되었습니다')">
+            제출
+        </a></button>
+
+    </fieldset>
+    </form>
+    </body>
+    </html>
+    
